@@ -1,8 +1,11 @@
-public interface IList {
-    void add(int index, int value);
-    void addFirst(int value);
-    void addLast(int value);
+public interface IList<T> {
+    void add(int index, T value);
+    void addFirst(T value);
+    void addLast(T value);
     void remove(int index);
-    void removeFirst();
+    Node removeFirst();
+    Node removeLast();
     Node getIndex(int index);
+    Node getFirst();
+    Node getLast();
 }
