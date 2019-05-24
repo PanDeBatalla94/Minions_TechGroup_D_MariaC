@@ -4,10 +4,10 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 public class CustomListsTests {
-    private CustomList customList;
+    private CustomList<Integer> customList;
     @Before
     public void init() {
-        customList = new CustomList();
+        customList = new CustomList<>();
     }
     @Test
     public void addTests() {
